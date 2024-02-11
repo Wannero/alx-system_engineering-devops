@@ -1,0 +1,43 @@
+t-happens-when-you-type-google.com-in-your-browser-and-press-Enter
+====================
+a blog post explaining what happens when you type https://www.google.com in your browser and press Enter.
+
+Requirements, your post must cover:
+
+DNS request
+TCP/IP
+Firewall
+HTTPS/SSL
+Load-balancer
+Web server
+Application server
+Database
+====================
+In today's digital age, the simple act of typing "https://www.google.com" into a web browser and hitting Enter sets off a complex chain of events that culminate in the display of Google's homepage. This seemingly mundane action involves a multitude of technologies working seamlessly together to deliver the desired webpage to the user. In this blog post, we will embark on a journey through the layers of the web stack to uncover the intricate process behind accessing Google's homepage.
+
+DNS Request:
+The journey begins with a DNS (Domain Name System) request. When the user enters "https://www.google.com" into the browser, it initiates a DNS query to translate the human-readable domain name "google.com" into an IP address. This query is sent to a DNS resolver, which recursively searches through a hierarchy of DNS servers until it finds the IP address associated with "www.google.com". Once resolved, this IP address is used to establish a connection to the Google server.
+
+TCP/IP:
+With the IP address in hand, the browser initiates a TCP (Transmission Control Protocol) connection to the server hosting Google's website. TCP is responsible for breaking down data into packets, ensuring their reliable delivery, and managing any congestion or errors along the way. Meanwhile, IP (Internet Protocol) handles the routing of these packets across the internet, ensuring they reach their intended destination.
+
+Firewall:
+As the TCP connection is established, it may encounter firewalls deployed to protect the server from unauthorized access or malicious attacks. Firewalls act as a barrier between the user's browser and the server, inspecting incoming and outgoing traffic and enforcing security policies to allow or block connections based on predefined rules. Assuming the connection passes through the firewall unimpeded, the journey continues.
+
+HTTPS/SSL:
+Once the TCP connection is established, the browser and the server engage in a cryptographic handshake to establish an HTTPS (Hypertext Transfer Protocol Secure) connection. This handshake involves exchanging SSL (Secure Sockets Layer) or TLS (Transport Layer Security) certificates to authenticate the server's identity and encrypt the data transmitted between the client and server. HTTPS ensures that the communication between the user's browser and the server remains secure and encrypted, protecting sensitive information from interception or tampering.
+
+Load-Balancer:
+Behind the scenes, Google likely employs load balancers to distribute incoming traffic across multiple servers to ensure optimal performance and reliability. Load balancers monitor the health of servers, distribute incoming requests based on factors such as server capacity and response time, and can reroute traffic in the event of server failures or congestion. This load balancing mechanism enables Google to handle large volumes of requests efficiently and effectively.
+
+Web Server:
+Upon reaching the web server in Google's infrastructure, the browser sends an HTTP (Hypertext Transfer Protocol) request for the specific resource, in this case, the Google homepage. The web server, which could be Google's custom-built servers running on technologies like GWS (Google Web Server) or Apache, processes the request, retrieves the requested HTML, CSS, JavaScript, and other assets, and generates an HTTP response to send back to the browser.
+
+Application Server:
+In addition to serving static content, Google's web server may interact with application servers to handle dynamic content generation or execute business logic. These application servers, powered by technologies such as Java, Python, or Go, process user inputs, query databases, perform calculations, and generate personalized responses before sending the results back to the web server for delivery to the user's browser.
+
+Database:
+Behind Google's search engine lies a vast infrastructure of databases storing and indexing web pages, user data, and various metadata. When a search query is made, the application server may query these databases to retrieve relevant results, rank them based on relevance and quality metrics, and assemble the final search results page dynamically before sending it back to the user's browser.
+
+Conclusion:
+As the user's keystrokes transform into Google's homepage on their screen, the intricate dance of technologies and systems orchestrates a seamless user experience. From DNS resolution to database queries, each component of the web stack plays a crucial role in delivering content swiftly, securely, and reliably. By demystifying this journey, we gain a deeper appreciation for the complexity and interconnectedness of the web, paving the way for future innovations and advancements.
